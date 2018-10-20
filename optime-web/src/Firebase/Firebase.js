@@ -1,4 +1,4 @@
-import firebase from 'firebase/app';
+import firebase from 'firebase';
 import 'firebase/auth';
 
 var config = {
@@ -10,9 +10,7 @@ var config = {
     messagingSenderId: "350884789935"
 };
 
-if (!firebase.apps.length) {
-    firebase.initializeApp(config);
-}
-
+var fire = firebase.initializeApp(config);
 const auth = firebase.auth();
-export { auth };
+
+export { auth, fire };
