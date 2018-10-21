@@ -31,17 +31,17 @@ const ProjectDetails = (props) => {
             </div>
         )
     }
-}
+};
 
 const mapStateToProps = (state, ownProps) => {
     const id = ownProps.match.params.id;
     const projects = state.firestore.data.projects;
-    const project = projects ? projects[id] : null
+    const project = projects ? projects[id] : null;
     return {
         project: project,
         auth: state.firebase.auth
     }
-}
+};
 
 export default compose(
     connect(mapStateToProps),
