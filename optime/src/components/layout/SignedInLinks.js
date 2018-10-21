@@ -12,9 +12,6 @@ const SignedInLinks = (props) => {
             <div className="collapse navbar-collapse" id="navbarText">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item">
-                        <a className="nav-link" href="/create">Nueva tarea</a>
-                    </li>
-                    <li className="nav-item">
                         <a className="nav-link" onClick={props.signOut} href="/">Cerrar sesión</a>
                     </li>
                 </ul>

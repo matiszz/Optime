@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { createTask } from '../../store/actions/taskActions'
 import { Redirect } from 'react-router-dom'
+
 // TODO: Style, initial state of the task.
 class CreateTask extends Component {
     state = {
