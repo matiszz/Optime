@@ -1,3 +1,5 @@
+
+// Sign In
 export const signIn = (credentials) => {
     return (dispatchEvent, getState, {getFirebase}) => {
         const firebase = getFirebase();
@@ -11,8 +13,9 @@ export const signIn = (credentials) => {
             dispatchEvent({ type: 'LOGIN_ERROR', err})
         });
     }
-}
+};
 
+// Sign Out
 export const signOut = () => {
     return (dispatchEvent, getState, {getFirebase}) => {
         const firebase = getFirebase();
@@ -21,8 +24,9 @@ export const signOut = () => {
             dispatchEvent({ type: 'SIGNOUT_SUCCESS' });
         })
     }
-}
+};
 
+// Sign Up
 export const signUp = (newUser) => {
     return (dispatchEvent, getState, {getFirebase, getFirestore}) => {
         const firebase = getFirebase();
@@ -43,4 +47,4 @@ export const signUp = (newUser) => {
             dispatchEvent({ type: 'SIGNUP_ERROR', err})
         })
     }
-}
+};
