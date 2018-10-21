@@ -54,11 +54,11 @@ class CreateTask extends Component {
                     <div className="input-field">
                         <label htmlFor="color">Color</label>
                         <select className="form-control" id="color" onChange={this.handleChange}>
-                            <option style={{color: "#ffa726"}}>ffa726</option>
-                            <option style={{color: "#9ccc65"}}>9ccc65</option>
-                            <option style={{color: "#29b6f6"}}>29b6f6</option>
-                            <option style={{color: "#ab47bc"}}>ab47bc</option>
-                            <option style={{color: "#ff7043"}}>ff7043</option>
+                            <option style={{color: "#CED73E"}}>#CED73E</option>
+                            <option style={{color: "#F28B7A"}}>#F28B7A</option>
+                            <option style={{color: "#FBAB76"}}>#FBAB76</option>
+                            <option style={{color: "#CAE4BF"}}>#CAE4BF</option>
+                            <option style={{color: "#FAE7BC"}}>#FAE7BC</option>
                         </select>
                     </div>
                     <div className="input-field">

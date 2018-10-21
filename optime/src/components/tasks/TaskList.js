@@ -1,11 +1,11 @@
 import React from 'react'
 import TaskSummary from './TaskSummary'
 
-const TaskList = ({tasks}) => {
+const TaskList = ({tasks, day}) => {
     return (
         <div className="project-list section">
             { tasks && tasks.map(task => {
-                return ( <TaskSummary task={task} /> )
+                if (task.day === day) return ( <TaskSummary task={task} /> )
             })}
         </div>
     )
