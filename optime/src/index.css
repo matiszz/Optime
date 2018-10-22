@@ -7,3 +7,7 @@ body {
     display: flex;
     align-items: center;
 }
+
+.targeta {
+    max-width: 100%;
+}

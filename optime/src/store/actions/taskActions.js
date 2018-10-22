@@ -13,3 +13,26 @@ export const createTask = (task) => {
         
     }
 };
+
+// Create task
+export const deleteTask = (task) => {
+    return (dispatch, getState, { getFirebase, getFirestore }) => {
+        // Make async call to DB
+        const firestore = getFirestore();
+        let collectionRef = firestore.collection('tasks');
+        collectionRef.where("descr", "==", task.descr).get()
+        .then(querySnapshot => {
+            querySnapshot.forEach((doc) => {
+                doc.ref.delete().then(() => {
+                    console.log("Document successfully deleted!");
+                }).catch(function(error) {
+                    console.error("Error removing document: ", error);
+                });
+            });
+        })
+        .catch(function(error) {
+            console.log("Error getting documents: ", error);
+        });
+
+    }
+};

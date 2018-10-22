@@ -1,8 +1,8 @@
 import React from 'react';
 import './styles.css';
-// import moment from 'moment'
+import {deleteTask} from "../../store/actions/taskActions";
+import connect from "react-redux/es/connect/connect";
 
-// const TaskSummary = ({task}) => {
 class TaskSummary extends React.Component {
     constructor(props) {
         super(props);
@@ -21,9 +21,14 @@ class TaskSummary extends React.Component {
         return { isHovering: !state.isHovering, };
     }
 
+    handleDelete = (e) => {
+        e.preventDefault();
+        this.props.deleteTask(this.props.task);
+    };
+
     render() {
         return (
-            <div className="card p-2 my-2"
+            <div className="card p-2 my-2 targeta"
                  style={{backgroundColor: this.state.taskColor}}
                  onMouseEnter={this.handleMouseHover}
                  onMouseLeave={this.handleMouseHover}>
@@ -31,7 +36,7 @@ class TaskSummary extends React.Component {
                 <p className="card-title">{this.props.task.descr}</p>
                 <div className="row">
                     <div className="col-2">
-                        {this.state.isHovering && <a href=""><i className="fas fa-check"/></a>}
+                        { <a onClick={this.handleDelete}><i className="fas fa-check"/></a>}
                     </div>
                     <div className="col">
                         <p className="text-right small">{this.props.task.duration}</p>
@@ -42,4 +47,12 @@ class TaskSummary extends React.Component {
     }
 }
 
-export default TaskSummary
+const mapStateToProps = (state) => {
+    return { auth: state.firebase.auth }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return { deleteTask: (task) => dispatch(deleteTask(task)) }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TaskSummary);
