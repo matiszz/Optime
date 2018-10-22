@@ -1,0 +1,13 @@
+body {
+    background-color: #F5F5F5;
+}
+
+.col-dia {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.targeta {
+    max-width: 100%;
+}

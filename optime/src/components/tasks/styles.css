@@ -1,0 +1,10 @@
+.small {
+    font-size: small;
+    font-weight: lighter;
+    font-style: italic;
+    color: #303030;
+}
+
+.menu-text {
+    color: #F0F4C3;
+}
