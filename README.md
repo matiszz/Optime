@@ -18,7 +18,9 @@ $ npm i && npm start
 Try the demo **[HERE](https://optime-5785c.web.app)**!
 
 ## Screenshots
-
+![create a task](https://github.com/matiszz/Optime/blob/master/images/createtask.png)
+![dashboard](https://github.com/matiszz/Optime/blob/master/images/dashboard.png)
+![sign in](https://github.com/matiszz/Optime/blob/master/images/signin.png)
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
