@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "testing-e5ba0"
+    "default": "testing-e5ba0",
+    "prod": "optime-5785c"
   }
 }
