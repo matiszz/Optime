@@ -71,6 +71,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## 📞 Contact
 
 Matias Szarfer - 🐤 [@matiasszarfer](https://twitter.com/matiasszarfer) · 📧 matias@szarfer.com · 💻 [matias.szarfer.com](https://matias.szarfer.com)
+Iair Mowszet
 
 Project Link: [https://github.com/matiszz/Optime](https://github.com/matiszz/Optime)
 
