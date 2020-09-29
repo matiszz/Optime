@@ -9,7 +9,7 @@
 <p align="center">
  
  <a href="https://github.com/matiszz/Optime">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/logo.png" alt="Logo" height="80">
   </a>
 
   <h3 align="center">Optime</h3>
@@ -28,7 +28,11 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://github.com/matiszz/Optime)
 
-Explanation
+This project was made in **36h** for the HackUPC hackathon.
+
+It is an excelent time organizer. It permits to create new tasks and assing the time that you're planning to spend on it. Is like a Trello but just made it simple.
+
+Feel free to try the [demo](https://optime-5785c.web.app/signin)! It's all hosted in Firebase.
 
 
 <!-- GETTING STARTED -->
